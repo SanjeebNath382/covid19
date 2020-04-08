@@ -30,7 +30,7 @@ export default class App extends Component {
       <img src={img} alt="covid19" className={styles.image}></img>
       {console.log(Object.keys(this.state.data).length === 0 && this.state.data.constructor === Object)}
       {Object.keys(this.state.data).length === 0 && this.state.data.constructor === Object?<Spinner />:<Cards data={this.state.data}/>}
-      <CountryPicker handleCountryChange={this.handleCountryChange}/>
+     {Object.keys(this.state.data).length === 0 && this.state.data.constructor === Object?<Spinner />:<CountryPicker handleCountryChange={this.handleCountryChange}/>} 
       <Chart data={this.state.data} country={this.state.country}/>
         
       </div>

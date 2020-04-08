@@ -1,25 +1,37 @@
 import React from 'react'
-import Spinner from 'react-bootstrap/Spinner'
 
-export default function Spinner1() {
+export default function spinner() {
     return (
         <>
-  <Spinner animation="border" variant="primary" />
-  <Spinner animation="border" variant="secondary" />
-  <Spinner animation="border" variant="success" />
-  <Spinner animation="border" variant="danger" />
-  <Spinner animation="border" variant="warning" />
-  <Spinner animation="border" variant="info" />
-  <Spinner animation="border" variant="light" />
-  <Spinner animation="border" variant="dark" />
-  <Spinner animation="grow" variant="primary" />
-  <Spinner animation="grow" variant="secondary" />
-  <Spinner animation="grow" variant="success" />
-  <Spinner animation="grow" variant="danger" />
-  <Spinner animation="grow" variant="warning" />
-  <Spinner animation="grow" variant="info" />
-  <Spinner animation="grow" variant="light" />
-  <Spinner animation="grow" variant="dark" />
-</>
+        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
+<div class="spinner-grow text-primary" role="status" style={{width:"10rem",height:"10rem"}}>
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-secondary" role="status" style={{width:"10rem",height:"10rem"}}>
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status" style={{width:"10rem",height:"10rem"}}>
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-danger" role="status" style={{width:"10rem",height:"10rem"}}>
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status" style={{width:"10rem",height:"10rem"}}>
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status" style={{width:"10rem",height:"10rem"}}>
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-light" role="status" style={{width:"10rem",height:"10rem"}}>
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-dark" role="status" style={{width:"10rem",height:"10rem"}}>
+  <span class="sr-only">Loading...</span>
+</div>
+</div>
+</div>
+            
+        </>
     )
 }
